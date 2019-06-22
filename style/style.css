@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.main-section {
+	width: 1290px;
+	height: 100vh;
+	margin: 0 auto;
+
+}
+.cat {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cat-left-hand {
+	transition: 0.2s;
+}
+.cat-right-hand {
+	transition: 0.2s;
+}
+
+
+.cat__item {
+	display: inline-block;
+	position: absolute;
+}
+
+.cat__item img {
+	width: 20vh;
+}
+.say {
+	display: flex;
+	position: absolute;
+	height: 100vh;
+}
+
+
+#say1 {
+	font-size: 2rem;
+	margin-top: 40vh;
+}
+#say2 {
+	font-size: 3rem;
+	margin-top: 60vh;
+}
+#say3 {
+	font-size: 8.3rem;
+	margin-top: 30vh;
+}
+#say4 {
+	font-size: 2rem;
+	margin-top: 80vh;
+}
+#say5 {
+	font-size: 3.4rem;
+	margin-top: 25vh;
+}
+#say6 {
+	font-size: 5rem;
+	margin-top: 73vh;
+}
+#say7 {
+	font-size: 1rem;
+	margin-top: 45vh;
+}
+#say8 {
+	font-size: 1.5rem;
+	margin-top: 12vh;
+}
+#say9 {
+	font-size: 4.3rem;
+	margin-top: 23vh;
+}
+#say10 {
+	font-size: 3.7rem;
+	margin-top: 56vh;
+}
+
+.say--none {
+	opacity: 0;
+	transition: 0.2 ease;
+	transition: opacity 0.05s;
+}
+
+.say--ut {
+	opacity: 1;
+	transition: 0.2 ease;
+	transition: opacity 0.05s;
+}
+.leftHand_anim {
+	animation-name: catsLeftHand;
+	animation-duration: 0.5s;
+}
+
+.rightHand_anim {
+	animation-name: catsRightHand;
+	animation-duration: 0.5s;
+}
+
+@keyframes catsLeftHand {
+		0%{transform: rotate(0deg);}
+		25%{transform: rotate(10deg);}
+		50%{transform: rotate(0deg);}
+		75%{transform: rotate(10deg);}
+		100%{transform: rotate(0deg);}
+}
+
+@keyframes catsRightHand {
+		0%{transform: rotate(0deg);}
+		25%{transform: rotate(-5deg);}
+		50%{transform: rotate(0deg);}
+		75%{transform: rotate(-5deg);}
+		100%{transform: rotate(0deg);}
+}
